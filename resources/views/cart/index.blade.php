@@ -86,7 +86,7 @@
 					</div>
 					<div class="summary-item">
 						<span class="text">Total</span><span class="price">{{price_format(Cart::total())}}</span>
-					</div><button class="btn btn-primary btn-lg btn-block" type="button">Checkout</button>
+					</div><a href="/checkout" class="btn btn-primary btn-lg btn-block" type="button">Checkout</a>
 				</div>
 			</div>
 		</div>
