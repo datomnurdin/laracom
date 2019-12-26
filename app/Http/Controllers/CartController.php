@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class CartController extends Controller
 {
     public function index(){
-        dd(session()->get('success'));
+        //dd(session()->get('success'));
         return view('cart.index');
     }
 
