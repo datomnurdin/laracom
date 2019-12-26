@@ -26,7 +26,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/cart">Cart</a>
+            <a class="nav-link" href="/cart">Cart 
+              @if (Cart::instance('default')->count() > 0)
+              <span class="badge badge-light">
+                  {{Cart::instance('default')->count()}}
+              </span>
+              @endif
+            </a>
           </li>
         </ul>
       </div>
